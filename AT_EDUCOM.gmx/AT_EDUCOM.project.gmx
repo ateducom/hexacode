@@ -36,6 +36,9 @@
     <sprite>sprites\spr_levels_buttons</sprite>
     <sprite>sprites\spr_bulb</sprite>
     <sprite>sprites\spr_ach</sprite>
+    <sprite>sprites\spr_ach_header</sprite>
+    <sprite>sprites\sprite17</sprite>
+    <sprite>sprites\sprite18</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_notes</background>

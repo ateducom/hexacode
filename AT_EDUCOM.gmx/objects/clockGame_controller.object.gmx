@@ -117,7 +117,7 @@ audio_play_sound(snd_success, 1, 0)
           <argument>
             <kind>1</kind>
             <string>///Start The Mode
-if attempts &lt; 10
+if attempts &lt; 5
 {
 count--
 if count &gt; 0
@@ -229,7 +229,7 @@ b2.image_blend = color1
             <string>if allowed
 ctr++
 
-if attempts &gt;= 10 &amp;&amp; alpha &gt;= 1
+if attempts &gt;= 5 &amp;&amp; alpha &gt;= 1
 {
 global.points = points
 room_goto(results)
@@ -292,7 +292,7 @@ draw_sprite_ext(spr_faces, 0, room_width/2, room_height/2, 0.5, 0.5, 0, c_white,
 //draw_text(0, room_height-200, "Attempts: " + string(attempts) + "
 //Points: " + string(points) + " CTR: " + string(ctr))
 
-if (attempts &gt;= 10)
+if (attempts &gt;= 5)
 {
 draw_set_alpha(alpha)
 draw_set_color(c_black)

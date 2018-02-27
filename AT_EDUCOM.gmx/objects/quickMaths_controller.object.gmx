@@ -124,7 +124,7 @@ audio_play_sound(snd_math, 1, 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (corrects + wrongs &lt; 6)
+            <string>if (corrects + wrongs &lt;= 4)
 {
 wspeed = wrongs
 cspeed = corrects
@@ -265,7 +265,7 @@ draw_set_valign(fa_bottom) //Set Vertical Alignment
 if (count &lt; 4 &amp;&amp; count &gt; 0)
 draw_text(room_width/2, room_height/2, string(count))
 
-if (corrects + wrongs &gt;= 7)
+if (corrects + wrongs &gt;= 5)
 {
 draw_set_alpha(alpha)
 draw_set_color(c_black)

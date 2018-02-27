@@ -112,7 +112,7 @@ draw_sprite(sprite9, 0, 0, 0)
 else if global.mode = "Math Game"
 draw_sprite(sprite8, 0, 0, 0)
 else if global.mode = "Rhythm Game"
-draw_sprite(sprite8, 0, 0, 0) ///CHANGE
+draw_sprite(sprite17, 0, 0, 0)
 </string>
           </argument>
         </arguments>

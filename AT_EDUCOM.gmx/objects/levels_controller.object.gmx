@@ -62,7 +62,9 @@ audio_play_sound(snd_level, 1, 1)
             <kind>1</kind>
             <string>draw_set_font(font_huge)
 draw_set_color(c_black)
+if (os_type = os_android)
 draw_set_halign(fa_right)
+else draw_set_halign(fa_center)
 draw_text(room_width/2, 50, "Choose The Game!")
 </string>
           </argument>

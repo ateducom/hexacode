@@ -33,6 +33,7 @@ hit = 0
 miss = 0
 alpha = 0
 now = 0
+tap = 0
 
 //Times
 times[0] = 3 + 0.4*0
@@ -148,12 +149,15 @@ room_goto(results)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ctr++
+            <string>if keyboard_check_released(vk_backspace)
+room_goto(levelSelector)
+ctr++
 if done &lt; 28 &amp;&amp; ctr = floor(times[done]*room_speed)
 {
+tap = 0
 audio_play_sound(snd_tone, 10, 0)
 a = instance_create(room_width*((done*0.3)%0.8), room_height/2, rhythmGame_enemy)
-a.life = 0.3*room_speed
+a.life = 0.4*room_speed
 a.alarm[0] = (press[done]-times[done])*room_speed
 a.ID = now
 done++
@@ -194,6 +198,14 @@ draw_set_color(c_black)
 draw_set_alpha(alpha)
 draw_rectangle(0, 0, room_width, room_height, 0)
 draw_set_alpha(1)
+
+draw_set_color(c_white)
+draw_set_font(font_huge)
+draw_set_halign(fa_right)
+draw_set_valign(fa_top)
+if tap
+draw_text(room_width/2, 0, "TAP!")
+else draw_text(room_width/2, 0, "DON'T TAP!")
 </string>
           </argument>
         </arguments>

@@ -82,10 +82,11 @@ room_goto(levelSelector)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(font_huge)
+            <string>/*draw_set_font(font_huge)
 draw_set_color(c_black)
 draw_set_halign(fa_right)
-draw_text(room_width/2, 50, "Achievements")
+draw_text(room_width/2, 50, "Achievements")*/
+draw_sprite(spr_ach_header, 0, room_width/2, 0)
 </string>
           </argument>
         </arguments>
